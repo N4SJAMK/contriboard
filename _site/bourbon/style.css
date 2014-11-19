@@ -1,0 +1,155 @@
+.button {
+  padding: 8px 20px;
+  margin: 5px;
+  outline: none;
+  vertical-align: center;
+  color: white;
+  background-color: #72BDBB;
+  margin-top: 6px;
+  width: 80%;
+  height: 46px;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+  -webkit-box-shadow: 2px 2px 0 0 #221A26;
+  box-shadow: 2px 2px 0 0 #221A26; }
+  .button:active {
+    outline: none;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    -webkit-transform: translateY(2px);
+    -moz-transform: translateY(2px);
+    -ms-transform: translateY(2px);
+    -o-transform: translateY(2px);
+    transform: translateY(2px);
+    -webkit-transform: translateX(2px);
+    -moz-transform: translateX(2px);
+    -ms-transform: translateX(2px);
+    -o-transform: translateX(2px);
+    transform: translateX(2px); }
+  .button:hover {
+    background-color: #619B98; }
+
+/* Neat 1.7.0
+ * http://neat.bourbon.io
+ * Copyright 2012-2014 thoughtbot, inc.
+ * MIT License */
+html {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box; }
+
+*, *:before, *:after {
+  -webkit-box-sizing: inherit;
+  -moz-box-sizing: inherit;
+  box-sizing: inherit; }
+
+body {
+  margin: 0;
+  padding: 0; }
+
+header, nav, section, footer {
+  max-width: 68em;
+  margin-left: auto;
+  margin-right: auto; }
+  header:after, nav:after, section:after, footer:after {
+    content: "";
+    display: table;
+    clear: both; }
+
+article {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 31.76157%; }
+  article:last-child {
+    margin-right: 0; }
+
+h1, h2, h3, h4 {
+  font-family: "Source Sans Pro", sans-serif;
+  color: #190C21; }
+
+p {
+  font-family: "Open Sans", sans-serif;
+  color: #190C21; }
+
+a {
+  font-family: "Source Sans Pro", sans-serif;
+  font-weight: bold;
+  text-decoration: none; }
+
+nav {
+  position: fixed;
+  top: 0px;
+  width: 100%; }
+  nav ul {
+    display: inline-block;
+    float: right; }
+  nav ul li {
+    display: inline-block;
+    padding: 0 10px; }
+    nav ul li li a {
+      font-family: "Source Sans Pro", sans-serif;
+      text-align: right; }
+
+.nav-bg {
+  background-color: #5A3866;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 54px; }
+
+header {
+  height: 400px; }
+
+header h1 {
+  font-size: 46px;
+  margin-top: 0;
+  padding-top: 80px; }
+
+header h4 {
+  display: inline-block;
+  margin-top: 16px; }
+
+header h1, header h2, header h3, header h4, header p, header a {
+  color: #FFFFFF; }
+
+.logo {
+  padding-top: 100px;
+  padding-bottom: 30px;
+  width: 500px; }
+
+.logo-mini {
+  margin-top: 18px;
+  width: 20px; }
+
+footer h1, footer h2, footer h3, footer h4, footer p, footer a {
+  color: #FFFFFF; }
+
+.some-text {
+  height: 40px;
+  padding-top: 10px; }
+  .some-text a {
+    font-weight: normal;
+    color: #FFFFFF;
+    margin: 5px;
+    padding-right: 20px; }
+  .some-text i {
+    color: #FFFFFF; }
+
+.black-background {
+  background-color: #190C21; }
+
+.light-purple-background {
+  background-color: #724A7F; }
+
+.center-text {
+  text-align: center; }
+
+/*# sourceMappingURL=style.css.map */

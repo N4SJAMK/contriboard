@@ -1,0 +1,105 @@
+@import "_bourbon.scss";
+@import "buttons.scss";
+@import "../neat/_neat.scss";
+
+// Variables
+
+$heading-font: "Source Sans Pro", sans-serif;
+$basic-font: "Open Sans", sans-serif;
+$font-color: #190C21;
+
+$logo-font-size: 46px;
+
+$purple-light: #724A7F;
+$purple-dark: #5A3866;
+$black: #190C21;
+$white: #FFFFFF;
+
+
+// Grid
+
+body {
+	margin: 0;
+	padding: 0;
+}
+
+header, nav, section, footer {
+	@include outer-container;
+}
+
+article {
+	@include span-columns(4);
+}
+
+
+// Styles
+
+h1, h2, h3, h4 {
+	font-family: $heading-font;
+	color: $font-color;
+}
+p {
+	font-family: $basic-font;
+	color: $font-color;
+}
+a {
+	font-family: $heading-font;
+	font-weight: bold;
+	text-decoration: none;
+}
+
+nav {
+	position: fixed;
+	top: 0px;
+	width: 100%;
+	ul {
+		display: inline-block;
+		float: right;
+	}
+	ul li {
+		display: inline-block;
+		padding: 0 10px;
+		li a {
+			font-family: $heading-font;
+			text-align: right;
+		}
+	}
+}
+.nav-bg {
+	background-color: $purple-dark;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 54px;
+}
+
+header {
+	height: 400px;
+}
+header h1 {
+	font-size: $logo-font-size;
+	margin-top: 0;
+	padding-top: 80px;
+}
+header h4 {
+	display: inline-block;
+	margin-top: 16px;
+}
+header h1, header h2, header h3, header h4, header p, header a {
+	color: $white;
+}
+
+footer h1, footer h2, footer h3, footer h4, footer p, footer a {
+	color: $white;
+}
+
+.black-background {
+	background-color: $black;
+}
+.light-purple-background {
+	background-color: $purple-light;
+}
+.center-text {
+	text-align: center;
+}

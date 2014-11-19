@@ -1,0 +1,39 @@
+@import "_bourbon.scss";
+
+// Colors
+
+$tumman-turkoosi: #619B98;
+$vaalean-turkoosi: #72BDBB;
+$dark-gray: #221A26;
+
+// Buttons
+
+.button {
+	padding: 8px 20px;
+	margin: 5px;
+	outline: none;
+	vertical-align: center;
+	color: white;
+	background-color: $vaalean-turkoosi;
+	margin-top: 6px;
+	width: 80%;
+	height: 46px;
+	@include border-top-radius(5px);
+	@include border-right-radius(5px);
+	@include border-bottom-radius(5px);
+	@include border-left-radius(5px);
+	-webkit-box-shadow: 2px 2px 0 0 $dark-gray;
+	box-shadow: 2px 2px 0 0  $dark-gray;
+
+	&:active {
+		outline: none;
+		-webkit-box-shadow: none;
+		box-shadow: none;
+		@include transform(translateY(2px));
+		@include transform(translateX(2px));
+	}
+
+	&:hover {
+		background-color: $tumman-turkoosi;
+	}
+}

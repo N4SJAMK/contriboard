@@ -120,8 +120,28 @@ header h4 {
 header h1, header h2, header h3, header h4, header p, header a {
   color: #FFFFFF; }
 
+.logo {
+  padding-top: 100px;
+  padding-bottom: 30px;
+  width: 500px; }
+
+.logo-mini {
+  margin-top: 18px;
+  width: 20px; }
+
 footer h1, footer h2, footer h3, footer h4, footer p, footer a {
   color: #FFFFFF; }
+
+.some-text {
+  height: 40px;
+  padding-top: 10px; }
+  .some-text a {
+    font-weight: normal;
+    color: #FFFFFF;
+    margin: 5px;
+    padding-right: 20px; }
+  .some-text i {
+    color: #FFFFFF; }
 
 .black-background {
   background-color: #190C21; }

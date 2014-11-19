@@ -89,11 +89,33 @@ header h4 {
 header h1, header h2, header h3, header h4, header p, header a {
 	color: $white;
 }
+.logo {
+	padding-top: 100px;
+	padding-bottom: 30px;
+	width: 500px;
+}
+.logo-mini {
+	margin-top: 18px;
+	width: 20px;
+}
 
 footer h1, footer h2, footer h3, footer h4, footer p, footer a {
 	color: $white;
 }
 
+.some-text {
+	height: 40px;
+	padding-top: 10px;
+	a {
+		font-weight: normal;
+		color: $white;
+		margin: 5px;
+		padding-right: 20px;
+	}
+	i {
+		color: $white;
+	}
+}
 .black-background {
 	background-color: $black;
 }

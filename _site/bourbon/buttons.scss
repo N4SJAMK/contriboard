@@ -22,8 +22,8 @@ $dark-gray: #221A26;
 	@include border-right-radius(5px);
 	@include border-bottom-radius(5px);
 	@include border-left-radius(5px);
-	-webkit-box-shadow: 2px 2px 0 0 $dark-gray;
-	box-shadow: 2px 2px 0 0  $dark-gray;
+	-webkit-box-shadow: 2px 2px 0 0 $tumman-turkoosi;
+	box-shadow: 2px 2px 0 0  $tumman-turkoosi;
 
 	&:active {
 		outline: none;

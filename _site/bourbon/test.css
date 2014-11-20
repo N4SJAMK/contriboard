@@ -5,8 +5,7 @@
   vertical-align: center;
   color: white;
   background-color: #72BDBB;
-  margin-top: 6px;
-  width: 80%;
+  margin-top: 26px;
   height: 46px;
   border-top-left-radius: 5px;
   border-top-right-radius: 5px;
@@ -34,6 +33,11 @@
     transform: translateX(2px); }
   .button:hover {
     background-color: #619B98; }
+
+.orange {
+  background-color: #EB584A;
+  -webkit-box-shadow: 2px 2px 0 0 #B8453A;
+  box-shadow: 2px 2px 0 0 #B8453A; }
 
 /* Neat 1.7.0
  * http://neat.bourbon.io

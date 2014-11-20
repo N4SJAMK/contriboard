@@ -5,6 +5,8 @@
 $tumman-turkoosi: #619B98;
 $vaalean-turkoosi: #72BDBB;
 $dark-gray: #221A26;
+$orange: #EB584A;
+$dark-orange: #B8453A;
 
 // Buttons
 
@@ -15,8 +17,7 @@ $dark-gray: #221A26;
 	vertical-align: center;
 	color: white;
 	background-color: $vaalean-turkoosi;
-	margin-top: 6px;
-	width: 80%;
+	margin-top: 26px;
 	height: 46px;
 	@include border-top-radius(5px);
 	@include border-right-radius(5px);
@@ -36,4 +37,9 @@ $dark-gray: #221A26;
 	&:hover {
 		background-color: $tumman-turkoosi;
 	}
+}
+.orange {
+	background-color: $orange;
+	-webkit-box-shadow: 2px 2px 0 0 $dark-orange;
+	box-shadow: 2px 2px 0 0  $dark-orange;
 }

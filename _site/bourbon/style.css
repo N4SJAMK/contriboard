@@ -5,8 +5,7 @@
   vertical-align: center;
   color: white;
   background-color: #72BDBB;
-  margin-top: 6px;
-  width: 80%;
+  margin-top: 26px;
   height: 46px;
   border-top-left-radius: 5px;
   border-top-right-radius: 5px;
@@ -34,6 +33,21 @@
     transform: translateX(2px); }
   .button:hover {
     background-color: #619B98; }
+
+.orange {
+  background-color: #EB584A;
+  -webkit-box-shadow: 2px 2px 0 0 #B8453A;
+  box-shadow: 2px 2px 0 0 #B8453A; }
+
+.login-form {
+  border-radius: 5px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  display: block;
+  margin: 5px auto; }
+
+.login-form-margin {
+  margin-bottom: 20px; }
 
 /* Neat 1.7.0
  * http://neat.bourbon.io
@@ -106,7 +120,7 @@ nav {
   height: 54px; }
 
 header {
-  height: 400px; }
+  height: 500px; }
 
 header h1 {
   font-size: 46px;
@@ -128,6 +142,12 @@ header h1, header h2, header h3, header h4, header p, header a {
 .logo-mini {
   margin-top: 18px;
   width: 20px; }
+
+section {
+  padding: 20px 10px; }
+
+article {
+  padding: 10px; }
 
 footer h1, footer h2, footer h3, footer h4, footer p, footer a {
   color: #FFFFFF; }

@@ -35,11 +35,12 @@
     background-color: #619B98; }
 
 .orange {
-  background-color: #724A7F;
-  -webkit-box-shadow: 2px 2px 0 0 #5A3866;
-  box-shadow: 2px 2px 0 0 #5A3866; }
+  background-color: #EB584A;
+  -webkit-box-shadow: 2px 2px 0 0 #9B3934;
+  box-shadow: 2px 2px 0 0 #9B3934;
+  margin-left: 0; }
   .orange:hover {
-    background-color: #5A3866; }
+    background-color: #9B3934; }
 
 .login-form {
   border-radius: 5px;
@@ -82,8 +83,16 @@ article {
   float: left;
   display: block;
   margin-right: 2.35765%;
-  width: 48.82117%; }
+  width: 31.76157%; }
   article:last-child {
+    margin-right: 0; }
+
+.header-article {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 65.88078%; }
+  .header-article:last-child {
     margin-right: 0; }
 
 h1, h2, h3, h4 {
@@ -108,7 +117,7 @@ nav {
     float: right; }
   nav ul li {
     display: inline-block;
-    padding: 0 10px; }
+    padding: 10px; }
     nav ul li li a {
       font-family: "Source Sans Pro", sans-serif;
       text-align: right; }
@@ -119,14 +128,15 @@ nav {
   top: 0;
   left: 0;
   width: 100%;
-  height: 54px; }
+  height: 70px; }
 
 header {
-  min-height: 500px; }
+  padding-top: 65px;
+  padding-bottom: 40px; }
 
 header h1 {
-  font-size: 46px;
-  margin-top: 20px; }
+  font-size: 36px;
+  margin-bottom: 10px; }
 
 header h4 {
   display: inline-block;
@@ -135,28 +145,50 @@ header h4 {
 header h1, header h2, header h3, header h4, header p, header a {
   color: #FFFFFF; }
 
+header p {
+  margin-bottom: 30px; }
+
 .logo {
-  padding-top: 50px;
-  width: 300px; }
+  width: 400px; }
 
 /*.logo-mini {
 	margin-top: 18px;
 	width: 20px;
 }*/
-.imagetemp {
-  margin-top: 50px;
-  background-color: white !important;
-  width: 100%;
-  height: 300px; }
-
-section {
-  padding: 20px 10px; }
+.headerlink {
+  margin-top: 60px; }
 
 article {
   padding: 10px; }
 
 footer h1, footer h2, footer h3, footer h4, footer p, footer a {
   color: #FFFFFF; }
+
+.journey-text {
+  width: 65%;
+  padding-bottom: 20px; }
+
+.info {
+  padding: 60px 0; }
+
+.circle {
+  margin: 0 auto;
+  width: 65px;
+  height: 65px;
+  background-color: #190C21;
+  border-top-left-radius: 50%;
+  border-top-right-radius: 50%;
+  border-top-right-radius: 50%;
+  border-bottom-right-radius: 50%;
+  border-bottom-left-radius: 50%;
+  border-bottom-right-radius: 50%;
+  border-top-left-radius: 50%;
+  border-bottom-left-radius: 50%; }
+
+.circle i {
+  color: #FFFFFF;
+  font-size: 32px;
+  line-height: 68px; }
 
 .some-text {
   height: 40px;

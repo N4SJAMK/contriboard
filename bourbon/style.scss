@@ -9,7 +9,7 @@ $heading-font: "Source Sans Pro", sans-serif;
 $basic-font: "Open Sans", sans-serif;
 $font-color: #190C21;
 
-$logo-font-size: 46px;
+$logo-font-size: 36px;
 
 $purple-light: #724A7F;
 $purple-dark: #5A3866;
@@ -30,9 +30,11 @@ header, nav, section, footer {
 }
 
 article {
-	@include span-columns(6);
+	@include span-columns(4);
 }
-
+.header-article {
+	@include span-columns(8);
+}
 
 // Styles
 
@@ -60,7 +62,7 @@ nav {
 	}
 	ul li {
 		display: inline-block;
-		padding: 0 10px;
+		padding: 10px;
 		li a {
 			font-family: $heading-font;
 			text-align: right;
@@ -74,15 +76,17 @@ nav {
 	top: 0;
 	left: 0;
 	width: 100%;
-	height: 54px;
+	height: 70px;
 }
 
 header {
-	min-height: 500px;
+	padding-top: 65px;
+	padding-bottom: 40px;
+
 }
 header h1 {
 	font-size: $logo-font-size;
-	margin-top: 20px;
+	margin-bottom: 10px;
 }
 header h4 {
 	display: inline-block;
@@ -91,22 +95,18 @@ header h4 {
 header h1, header h2, header h3, header h4, header p, header a {
 	color: $white;
 }
+header p {
+	margin-bottom: 30px;
+}
 .logo {
-	padding-top: 50px;
-	width: 300px;
+	width: 400px;
 }
 /*.logo-mini {
 	margin-top: 18px;
 	width: 20px;
 }*/
-.imagetemp {
-	margin-top: 50px;
-	background-color: white !important;
-	width: 100%;
-	height: 300px;
-}
-section {
-	padding: 20px 10px;
+.headerlink {
+	margin-top: 60px;
 }
 article {
 	padding: 10px;
@@ -115,7 +115,29 @@ article {
 footer h1, footer h2, footer h3, footer h4, footer p, footer a {
 	color: $white;
 }
+.journey-text {
+	width: 65%;
+	padding-bottom: 20px;
+}
+.info {
+	padding: 60px 0;
+}
 
+.circle {
+	margin: 0 auto;
+	width: 65px;
+	height: 65px;
+	background-color: $black;
+	@include border-top-radius(50%);
+	@include border-right-radius(50%);
+	@include border-bottom-radius(50%);
+	@include border-left-radius(50%);
+}
+.circle i {
+	color: $white;
+	font-size: 32px;
+	line-height: 68px;
+}
 .some-text {
 	height: 40px;
 	padding-top: 10px;

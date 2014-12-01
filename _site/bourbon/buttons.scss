@@ -7,6 +7,9 @@ $vaalean-turkoosi: #72BDBB;
 $dark-gray: #221A26;
 $purple-light: #724A7F;
 $purple-dark: #5A3866;
+$orange: #EB584A;
+$orange-dark: #9B3934;
+
 
 // Buttons
 
@@ -39,10 +42,11 @@ $purple-dark: #5A3866;
 	}
 }
 .orange {
-	background-color: $purple-light;
-	-webkit-box-shadow: 2px 2px 0 0 $purple-dark;
-	box-shadow: 2px 2px 0 0  $purple-dark;
+	background-color: $orange;
+	-webkit-box-shadow: 2px 2px 0 0 $orange-dark;
+	box-shadow: 2px 2px 0 0  $orange-dark;
+	margin-left: 0;
 	&:hover {
-		background-color: $purple-dark;
+		background-color: $orange-dark;
 	}
 }

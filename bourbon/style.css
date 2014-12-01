@@ -95,6 +95,14 @@ article {
   .header-article:last-child {
     margin-right: 0; }
 
+.footer-article {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 6.17215%; }
+  .footer-article:last-child {
+    margin-right: 0; }
+
 h1, h2, h3, h4 {
   font-family: "Source Sans Pro", sans-serif;
   color: #190C21; }
@@ -166,7 +174,16 @@ footer h1, footer h2, footer h3, footer h4, footer p, footer a {
   color: #FFFFFF; }
 
 footer {
-  padding-left: 15px; }
+  padding: 15px 15px;
+  padding-bottom: 25px; }
+
+footer h3 {
+  font-size: 16px; }
+
+footer a {
+  font-size: 13px;
+  font-family: "Open Sans", sans-serif;
+  font-weight: normal; }
 
 .journey-text {
   width: 65%;

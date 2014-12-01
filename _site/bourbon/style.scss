@@ -30,7 +30,7 @@ header, nav, section, footer {
 }
 
 article {
-	@include span-columns(4);
+	@include span-columns(6);
 }
 
 

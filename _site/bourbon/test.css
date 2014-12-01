@@ -35,9 +35,11 @@
     background-color: #619B98; }
 
 .orange {
-  background-color: #EB584A;
-  -webkit-box-shadow: 2px 2px 0 0 #B8453A;
-  box-shadow: 2px 2px 0 0 #B8453A; }
+  background-color: #724A7F;
+  -webkit-box-shadow: 2px 2px 0 0 #5A3866;
+  box-shadow: 2px 2px 0 0 #5A3866; }
+  .orange:hover {
+    background-color: #5A3866; }
 
 /* Neat 1.7.0
  * http://neat.bourbon.io

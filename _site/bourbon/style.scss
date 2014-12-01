@@ -82,7 +82,7 @@ nav {
 header {
 	padding-top: 65px;
 	padding-bottom: 40px;
-
+	padding-left: 15px;
 }
 header h1 {
 	font-size: $logo-font-size;
@@ -115,9 +115,12 @@ article {
 footer h1, footer h2, footer h3, footer h4, footer p, footer a {
 	color: $white;
 }
+footer {
+	padding-left: 15px;
+}
 .journey-text {
 	width: 65%;
-	padding-bottom: 20px;
+	padding-bottom: 40px;
 }
 .info {
 	padding: 60px 0;

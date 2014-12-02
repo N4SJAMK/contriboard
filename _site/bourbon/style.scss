@@ -7,7 +7,6 @@
 $heading-font: "Source Sans Pro", sans-serif;
 $basic-font: "Open Sans", sans-serif;
 $font-color: #190C21;
-
 $logo-font-size: 36px;
 
 $purple-light: #724A7F;
@@ -106,21 +105,32 @@ header p {
 	margin-top: 60px;
 }
 .picture {
-	@include span-columns(4);
+	@include span-columns(8);
 	display: inline;
 	padding-left: 20px;
+	padding-top: 10px;
 	position: relative;
+	@media screen and (max-width: 1200px) {
+		display: none;
+	}
 }
 .picture img {
-	max-height: 580px;
+	height: 580px;
 	position: absolute;
-	padding-left: 40px;
-	padding-top: 10px;
+	padding-left: 30px;
+	@media screen and (max-width: 1200px) {
+		display: none;
+  	}
+}
+header article {
+	@media screen and (max-width: 1200px) {
+		@include span-columns(12);
+		text-align: center;
+	}
 }
 article {
 	padding: 10px;
 }
-
 footer h1, footer h2, footer h3, footer h4, footer p, footer a {
 	color: $white;
 }
@@ -177,14 +187,20 @@ footer a {
 .some-text {
 	height: 40px;
 	padding-top: 10px;
-	a {
+}
+.some-buttons {
+	position: relative;
+	top: -90px;
+	color: $white;
+	text-align: center;
+	z-index: 1000;
+	& a {
 		font-weight: normal;
 		color: $white;
-		margin: 5px;
-		padding-right: 20px;
+		padding-right: 5px;
 	}
-	i {
-		color: $white;
+	& i {
+		padding: 0 10px;
 	}
 }
 .black-background {

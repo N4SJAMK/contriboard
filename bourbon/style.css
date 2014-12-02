@@ -174,18 +174,34 @@ header p {
   float: left;
   display: block;
   margin-right: 2.35765%;
-  width: 31.76157%;
+  width: 65.88078%;
   display: inline;
   padding-left: 20px;
+  padding-top: 10px;
   position: relative; }
   .picture:last-child {
     margin-right: 0; }
+  @media screen and (max-width: 1200px) {
+    .picture {
+      display: none; } }
 
 .picture img {
-  max-height: 580px;
+  height: 580px;
   position: absolute;
-  padding-left: 40px;
-  padding-top: 10px; }
+  padding-left: 30px; }
+  @media screen and (max-width: 1200px) {
+    .picture img {
+      display: none; } }
+
+@media screen and (max-width: 1200px) {
+  header article {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 100%;
+    text-align: center; }
+    header article:last-child {
+      margin-right: 0; } }
 
 article {
   padding: 10px; }
@@ -248,13 +264,19 @@ footer a {
 .some-text {
   height: 40px;
   padding-top: 10px; }
-  .some-text a {
+
+.some-buttons {
+  position: relative;
+  top: -90px;
+  color: #FFFFFF;
+  text-align: center;
+  z-index: 1000; }
+  .some-buttons a {
     font-weight: normal;
     color: #FFFFFF;
-    margin: 5px;
-    padding-right: 20px; }
-  .some-text i {
-    color: #FFFFFF; }
+    padding-right: 5px; }
+  .some-buttons i {
+    padding: 0 10px; }
 
 .black-background {
   background-color: #190C21; }

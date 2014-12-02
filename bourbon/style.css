@@ -127,6 +127,9 @@ nav {
 
 .nav-bg {
   background-color: #5A3866;
+  -webkit-transition: background-color 0.2s ease-in;
+  -moz-transition: background-color 0.2s ease-in;
+  transition: background-color 0.2s ease-in;
   position: fixed;
   top: 0;
   left: 0;

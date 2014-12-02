@@ -69,6 +69,7 @@ nav {
 }
 .nav-bg {
 	background-color: $purple-dark;
+	@include transition(background-color 0.2s ease-in);
 	position: fixed;
 	top: 0;
 	left: 0;

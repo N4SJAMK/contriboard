@@ -34,6 +34,7 @@ article {
 	@include omega();
 }
 
+
 // Styles
 h1, h2, h3, h4 {
 	font-family: $heading-font;
@@ -69,6 +70,7 @@ nav {
 }
 .nav-bg {
 	background-color: $purple-dark;
+	@include transition(background-color 0.2s ease-in);
 	position: fixed;
 	top: 0;
 	left: 0;

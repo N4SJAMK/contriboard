@@ -20,20 +20,27 @@ body {
 	margin: 0;
 	padding: 0;
 }
-
 header, nav, section, footer {
 	@include outer-container;
 }
-
 article {
 	@include span-columns(4);
+	@media screen and (max-width: 900px) {
+		@include span-columns(12);
+	}
 }
 .footer-article {
 	@include span-columns(2);
 	@include omega();
+	@media screen and (max-width: 1200px) {
+		@include span-columns(3);
+	}
 }
 .footer-article-big {
 	@include span-columns(8);
+	@media screen and (max-width: 1200px) {
+		@include span-columns(4);
+	}
 }
 
 // Styles
@@ -130,6 +137,9 @@ header article {
 }
 article {
 	padding: 10px;
+	@media screen and (max-width: 900px) {
+		padding: 10px 40px;
+	}
 }
 footer h1, footer h2, footer h3, footer h4, footer p, footer a {
 	color: $white;
@@ -168,6 +178,9 @@ footer a {
 }
 .info {
 	padding: 60px 0;
+	@media screen and (max-width: 900px) {
+		padding: 30px 0;
+	}
 }
 .circle {
 	margin: 0 auto;
@@ -193,7 +206,7 @@ footer a {
 	top: -90px;
 	color: $white;
 	text-align: center;
-	z-index: 1000;
+	z-index: 10;
 	& a {
 		font-weight: normal;
 		color: $white;
@@ -201,6 +214,9 @@ footer a {
 	}
 	& i {
 		padding: 0 10px;
+	}
+	@media screen and (max-width: 900px) {
+		top: -60px;
 	}
 }
 .black-background {

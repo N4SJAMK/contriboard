@@ -160,9 +160,9 @@ nav {
 
 .nav-bg {
   background-color: #5A3866;
-  -webkit-transition: background-color 0.2s ease-in;
-  -moz-transition: background-color 0.2s ease-in;
-  transition: background-color 0.2s ease-in;
+  -webkit-transition: background-color 0.2s ease-out;
+  -moz-transition: background-color 0.2s ease-out;
+  transition: background-color 0.2s ease-out;
   position: fixed;
   top: 0;
   left: 0;
@@ -317,6 +317,12 @@ footer a {
 
 .light-purple-background {
   background-color: #724A7F; }
+
+.white-background {
+  background-color: #FFFFFF;
+  width: 100%;
+  margin-left: 0;
+  margin-right: 0; }
 
 .center-text {
   text-align: center; }

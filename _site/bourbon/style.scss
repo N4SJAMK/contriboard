@@ -79,7 +79,7 @@ nav {
 }
 .nav-bg {
 	background-color: $purple-dark;
-	@include transition(background-color 0.2s ease-in);
+	@include transition(background-color 0.2s ease-out);
 	position: fixed;
 	top: 0;
 	left: 0;
@@ -225,6 +225,12 @@ footer a {
 }
 .light-purple-background {
 	background-color: $purple-light;
+}
+.white-background {
+	background-color: $white;
+	width: 100%;
+	margin-left: 0;
+	margin-right: 0;
 }
 .center-text {
 	text-align: center;

@@ -1,7 +1,8 @@
 @import "_bourbon.scss";
 @import "buttons.scss";
 @import "forms.scss";
-@import "../neat/_neat.scss";
+@import "grid.scss";
+
 
 // Variables
 
@@ -17,45 +18,13 @@ $white: #FFFFFF;
 $orange: #EB584A;
 
 
-// Grid
+// STYLES
 
 body {
 	background-color: $black;
 	margin: 0;
 	padding: 0;
 }
-header, nav, section, footer {
-	@include outer-container;
-}
-article {
-	@include span-columns(4);
-	@media screen and (max-width: 900px) {
-		@include span-columns(12);
-	}
-}
-.gh-article {
-	@include span-columns(6);
-	@media screen and (max-width: 600px) {
-		@include span-columns(12);
-	}
-}
-.footer-article {
-	@include span-columns(2);
-	@include omega();
-	@media screen and (max-width: 1200px) {
-		@include span-columns(3);
-	}
-}
-.footer-article-big {
-	@include span-columns(8);
-	@media screen and (max-width: 1200px) {
-		@include span-columns(4);
-	}
-}
-
-
-// Styles
-
 h1, h2, h3, h4 {
 	font-family: $heading-font;
 	color: $font-color;
@@ -69,6 +38,10 @@ a {
 	font-weight: bold;
 	text-decoration: none;
 }
+
+
+// Nav
+
 nav {
 	position: fixed;
 	top: 0px;
@@ -111,6 +84,10 @@ nav {
 	z-index: 100;
 	height: 70px;
 }
+
+
+// Header
+
 header {
 	padding-top: 65px;
 	padding-bottom: 40px;
@@ -172,17 +149,51 @@ header article {
 		text-align: center;
 	}
 }
+
+// Main content area
+
+.some-text {
+	height: 40px;
+	padding-top: 10px;
+}
+.some-buttons {
+	position: relative;
+	top: -90px;
+	color: $white;
+	text-align: center;
+	z-index: 10;
+	& a {
+		font-weight: normal;
+		color: $white;
+		padding-right: 5px;
+		&:hover {
+			color: darken($white, 15%);
+		}
+	}
+	& i {
+		padding: 0 10px;
+	}
+	@media screen and (max-width: 900px) {
+		top: -60px;
+	}
+	@media screen and (max-width: 600px) {
+		top: -50px;
+	}
+}
 article {
 	padding: 10px;
 	@media screen and (max-width: 900px) {
 		padding: 10px 40px;
 	}
 }
-
-.copyright {
-	display: block;
-	padding-top: 10px;
-	font-size: 12px;
+.white-background {
+	background-color: $white;
+	width: 100%;
+	margin-left: 0;
+	margin-right: 0;
+}
+.center-text {
+	text-align: center;
 }
 .journey-text {
 	width: 65%;
@@ -221,34 +232,6 @@ article {
 	font-size: 32px;
 	line-height: 68px;
 }
-.some-text {
-	height: 40px;
-	padding-top: 10px;
-}
-.some-buttons {
-	position: relative;
-	top: -90px;
-	color: $white;
-	text-align: center;
-	z-index: 10;
-	& a {
-		font-weight: normal;
-		color: $white;
-		padding-right: 5px;
-		&:hover {
-			color: darken($white, 15%);
-		}
-	}
-	& i {
-		padding: 0 10px;
-	}
-	@media screen and (max-width: 900px) {
-		top: -60px;
-	}
-	@media screen and (max-width: 600px) {
-		top: -50px;
-	}
-}
 .black-background {
 	background-color: $black;
 }
@@ -279,15 +262,10 @@ article {
 		padding-bottom: 20px;
 	}
 }
-.white-background {
-	background-color: $white;
-	width: 100%;
-	margin-left: 0;
-	margin-right: 0;
-}
-.center-text {
-	text-align: center;
-}
+
+
+// Footer
+
 footer h1, footer h2, footer h3, footer h4, footer p, footer a {
 	color: $white;
 }
@@ -316,4 +294,9 @@ footer a {
 		padding: 10px;
 		font-size: 30px;
 	}
+}
+.copyright {
+	display: block;
+	padding-top: 10px;
+	font-size: 12px;
 }

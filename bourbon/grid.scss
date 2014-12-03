@@ -1,0 +1,32 @@
+@import "../neat/_neat.scss";
+
+// Grid
+
+header, nav, section, footer {
+	@include outer-container;
+}
+article {
+	@include span-columns(4);
+	@media screen and (max-width: 900px) {
+		@include span-columns(12);
+	}
+}
+.gh-article {
+	@include span-columns(6);
+	@media screen and (max-width: 600px) {
+		@include span-columns(12);
+	}
+}
+.footer-article {
+	@include span-columns(2);
+	@include omega();
+	@media screen and (max-width: 1200px) {
+		@include span-columns(3);
+	}
+}
+.footer-article-big {
+	@include span-columns(8);
+	@media screen and (max-width: 1200px) {
+		@include span-columns(4);
+	}
+}

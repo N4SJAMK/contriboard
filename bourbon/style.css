@@ -69,11 +69,6 @@ html {
   -moz-box-sizing: inherit;
   box-sizing: inherit; }
 
-body {
-  background-color: #190C21;
-  margin: 0;
-  padding: 0; }
-
 header, nav, section, footer {
   max-width: 68em;
   margin-left: auto;
@@ -147,6 +142,11 @@ article {
       width: 31.76157%; }
       .footer-article-big:last-child {
         margin-right: 0; } }
+
+body {
+  background-color: #190C21;
+  margin: 0;
+  padding: 0; }
 
 h1, h2, h3, h4 {
   font-family: "Source Sans Pro", sans-serif;
@@ -270,16 +270,45 @@ header p {
     header article:last-child {
       margin-right: 0; } }
 
+.some-text {
+  height: 40px;
+  padding-top: 10px; }
+
+.some-buttons {
+  position: relative;
+  top: -90px;
+  color: #FFFFFF;
+  text-align: center;
+  z-index: 10; }
+  .some-buttons a {
+    font-weight: normal;
+    color: #FFFFFF;
+    padding-right: 5px; }
+    .some-buttons a:hover {
+      color: #d9d9d9; }
+  .some-buttons i {
+    padding: 0 10px; }
+  @media screen and (max-width: 900px) {
+    .some-buttons {
+      top: -60px; } }
+  @media screen and (max-width: 600px) {
+    .some-buttons {
+      top: -50px; } }
+
 article {
   padding: 10px; }
   @media screen and (max-width: 900px) {
     article {
       padding: 10px 40px; } }
 
-.copyright {
-  display: block;
-  padding-top: 10px;
-  font-size: 12px; }
+.white-background {
+  background-color: #FFFFFF;
+  width: 100%;
+  margin-left: 0;
+  margin-right: 0; }
+
+.center-text {
+  text-align: center; }
 
 .journey-text {
   width: 65%;
@@ -320,31 +349,6 @@ article {
   font-size: 32px;
   line-height: 68px; }
 
-.some-text {
-  height: 40px;
-  padding-top: 10px; }
-
-.some-buttons {
-  position: relative;
-  top: -90px;
-  color: #FFFFFF;
-  text-align: center;
-  z-index: 10; }
-  .some-buttons a {
-    font-weight: normal;
-    color: #FFFFFF;
-    padding-right: 5px; }
-    .some-buttons a:hover {
-      color: #d9d9d9; }
-  .some-buttons i {
-    padding: 0 10px; }
-  @media screen and (max-width: 900px) {
-    .some-buttons {
-      top: -60px; } }
-  @media screen and (max-width: 600px) {
-    .some-buttons {
-      top: -50px; } }
-
 .black-background {
   background-color: #190C21; }
 
@@ -369,15 +373,6 @@ article {
     .gh-section {
       padding-top: 30px;
       padding-bottom: 20px; } }
-
-.white-background {
-  background-color: #FFFFFF;
-  width: 100%;
-  margin-left: 0;
-  margin-right: 0; }
-
-.center-text {
-  text-align: center; }
 
 footer h1, footer h2, footer h3, footer h4, footer p, footer a {
   color: #FFFFFF; }
@@ -404,5 +399,10 @@ footer a {
   .footer-article-big i {
     padding: 10px;
     font-size: 30px; }
+
+.copyright {
+  display: block;
+  padding-top: 10px;
+  font-size: 12px; }
 
 /*# sourceMappingURL=style.css.map */

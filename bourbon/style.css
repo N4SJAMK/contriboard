@@ -356,7 +356,8 @@ article {
   .gh-section h2, .gh-section p {
     color: #FFFFFF; }
   .gh-section a {
-    color: #FFFFFF; }
+    color: #FFFFFF;
+    text-decoration: underline; }
     .gh-section a:hover {
       color: #d9d9d9; }
   .gh-section a i {

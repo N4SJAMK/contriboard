@@ -99,6 +99,22 @@ article {
       article:last-child {
         margin-right: 0; } }
 
+.gh-article {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 48.82117%; }
+  .gh-article:last-child {
+    margin-right: 0; }
+  @media screen and (max-width: 600px) {
+    .gh-article {
+      float: left;
+      display: block;
+      margin-right: 2.35765%;
+      width: 100%; }
+      .gh-article:last-child {
+        margin-right: 0; } }
+
 .footer-article {
   float: left;
   display: block;
@@ -203,6 +219,9 @@ header h4 {
 header h1, header h2, header h3, header h4, header p, header a {
   color: #FFFFFF; }
 
+header a:hover {
+  color: #d9d9d9; }
+
 header p {
   margin-bottom: 30px; }
   @media screen and (max-width: 600px) {
@@ -256,30 +275,6 @@ article {
   @media screen and (max-width: 900px) {
     article {
       padding: 10px 40px; } }
-
-footer h1, footer h2, footer h3, footer h4, footer p, footer a {
-  color: #FFFFFF; }
-
-footer {
-  padding: 15px 15px;
-  padding-bottom: 25px; }
-
-footer h3 {
-  font-size: 16px; }
-
-footer a {
-  font-size: 13px;
-  font-family: "Open Sans", sans-serif;
-  font-weight: normal;
-  display: block; }
-
-.footer-article-big {
-  text-align: right; }
-  .footer-article-big a {
-    display: inline-block; }
-  .footer-article-big i {
-    padding: 10px;
-    font-size: 30px; }
 
 .copyright {
   display: block;
@@ -339,6 +334,8 @@ footer a {
     font-weight: normal;
     color: #FFFFFF;
     padding-right: 5px; }
+    .some-buttons a:hover {
+      color: #d9d9d9; }
   .some-buttons i {
     padding: 0 10px; }
   @media screen and (max-width: 900px) {
@@ -354,6 +351,24 @@ footer a {
 .light-purple-background {
   background-color: #724A7F; }
 
+.gh-section {
+  padding: 40px 10px; }
+  .gh-section h2, .gh-section p {
+    color: #FFFFFF; }
+  .gh-section a {
+    color: #FFFFFF; }
+    .gh-section a:hover {
+      color: #d9d9d9; }
+  .gh-section a i {
+    color: #FFFFFF;
+    font-size: 34px; }
+    .gh-section a i:hover {
+      color: #d9d9d9; }
+  @media screen and (max-width: 600px) {
+    .gh-section {
+      padding-top: 30px;
+      padding-bottom: 20px; } }
+
 .white-background {
   background-color: #FFFFFF;
   width: 100%;
@@ -362,5 +377,31 @@ footer a {
 
 .center-text {
   text-align: center; }
+
+footer h1, footer h2, footer h3, footer h4, footer p, footer a {
+  color: #FFFFFF; }
+
+footer {
+  padding: 15px 15px;
+  padding-bottom: 25px; }
+
+footer h3 {
+  font-size: 16px; }
+
+footer a {
+  font-size: 13px;
+  font-family: "Open Sans", sans-serif;
+  font-weight: normal;
+  display: block; }
+  footer a:hover {
+    color: #d9d9d9; }
+
+.footer-article-big {
+  text-align: right; }
+  .footer-article-big a {
+    display: inline-block; }
+  .footer-article-big i {
+    padding: 10px;
+    font-size: 30px; }
 
 /*# sourceMappingURL=style.css.map */

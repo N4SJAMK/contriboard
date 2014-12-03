@@ -4,6 +4,7 @@
 @import "../neat/_neat.scss";
 
 // Variables
+
 $heading-font: "Source Sans Pro", sans-serif;
 $basic-font: "Open Sans", sans-serif;
 $font-color: #190C21;
@@ -15,7 +16,9 @@ $black: #190C21;
 $white: #FFFFFF;
 $orange: #EB584A;
 
+
 // Grid
+
 body {
 	background-color: $black;
 	margin: 0;
@@ -27,6 +30,12 @@ header, nav, section, footer {
 article {
 	@include span-columns(4);
 	@media screen and (max-width: 900px) {
+		@include span-columns(12);
+	}
+}
+.gh-article {
+	@include span-columns(6);
+	@media screen and (max-width: 600px) {
 		@include span-columns(12);
 	}
 }
@@ -44,7 +53,9 @@ article {
 	}
 }
 
+
 // Styles
+
 h1, h2, h3, h4 {
 	font-family: $heading-font;
 	color: $font-color;
@@ -119,6 +130,9 @@ header h4 {
 header h1, header h2, header h3, header h4, header p, header a {
 	color: $white;
 }
+header a:hover {
+	color: darken($white, 15%);
+}
 header p {
 	margin-bottom: 30px;
 	@media screen and (max-width: 600px) {
@@ -164,32 +178,7 @@ article {
 		padding: 10px 40px;
 	}
 }
-footer h1, footer h2, footer h3, footer h4, footer p, footer a {
-	color: $white;
-}
-footer {
-	padding: 15px 15px;
-	padding-bottom: 25px;
-}
-footer h3 {
-	font-size: 16px;
-}
-footer a {
-	font-size: 13px;
-	font-family: $basic-font;
-	font-weight: normal;
-	display: block;
-}
-.footer-article-big {
-	text-align: right;
-	& a {
-		display: inline-block;
-	}
-	& i {
-		padding: 10px;
-		font-size: 30px;
-	}
-}
+
 .copyright {
 	display: block;
 	padding-top: 10px;
@@ -246,6 +235,9 @@ footer a {
 		font-weight: normal;
 		color: $white;
 		padding-right: 5px;
+		&:hover {
+			color: darken($white, 15%);
+		}
 	}
 	& i {
 		padding: 0 10px;
@@ -263,6 +255,29 @@ footer a {
 .light-purple-background {
 	background-color: $purple-light;
 }
+.gh-section {
+	padding: 40px 10px;
+	h2, p {
+		color: $white;
+	}
+	a {
+		color: $white;
+		&:hover {
+			color: darken($white, 15%);
+		}
+	}
+	a i {
+		color: $white;
+		font-size: 34px;
+		&:hover {
+		color: darken($white, 15%);
+	}
+	}
+	@media screen and (max-width: 600px) {
+		padding-top: 30px;
+		padding-bottom: 20px;
+	}
+}
 .white-background {
 	background-color: $white;
 	width: 100%;
@@ -271,4 +286,33 @@ footer a {
 }
 .center-text {
 	text-align: center;
+}
+footer h1, footer h2, footer h3, footer h4, footer p, footer a {
+	color: $white;
+}
+footer {
+	padding: 15px 15px;
+	padding-bottom: 25px;
+}
+footer h3 {
+	font-size: 16px;
+}
+footer a {
+	font-size: 13px;
+	font-family: $basic-font;
+	font-weight: normal;
+	display: block;
+	&:hover {
+		color: darken($white, 15%);
+	}
+}
+.footer-article-big {
+	text-align: right;
+	& a {
+		display: inline-block;
+	}
+	& i {
+		padding: 10px;
+		font-size: 30px;
+	}
 }

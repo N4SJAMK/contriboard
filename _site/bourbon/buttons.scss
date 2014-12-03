@@ -40,6 +40,9 @@ $orange-dark: #9B3934;
 	&:hover {
 		background-color: $tumman-turkoosi;
 	}
+	@media screen and (max-width: 600px) {
+		padding: 6px 10px;
+	}
 }
 .orange {
 	background-color: $orange;

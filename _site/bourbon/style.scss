@@ -83,6 +83,7 @@ nav {
 			float: none;
 			margin-top: 40px;
 			display: inline;
+			padding-left: 0;
 		}
 		li a {
 			font-size: 13px;
@@ -107,6 +108,9 @@ header {
 header h1 {
 	font-size: $logo-font-size;
 	margin-bottom: 10px;
+	@media screen and (max-width: 600px) {
+		font-size: 26px;
+	}
 }
 header h4 {
 	display: inline-block;
@@ -117,9 +121,15 @@ header h1, header h2, header h3, header h4, header p, header a {
 }
 header p {
 	margin-bottom: 30px;
+	@media screen and (max-width: 600px) {
+		font-size: 13px;
+	}
 }
 .logo {
 	width: 400px;
+	@media screen and (max-width: 600px) {
+		width: 260px;
+	}
 }
 .headerlink {
 	margin-top: 60px;
@@ -188,11 +198,23 @@ footer a {
 .journey-text {
 	width: 65%;
 	padding-bottom: 40px;
+	@media screen and (max-width: 600px) {
+		padding-bottom: 10px;
+	}
 }
 .info {
 	padding: 60px 0;
 	@media screen and (max-width: 900px) {
 		padding: 30px 0;
+	}
+	@media screen and (max-width: 600px) {
+		padding: 20px 0;
+		& h2 {
+			font-size: 22px;
+		}
+		& p {
+			font-size: 14px;
+		}
 	}
 }
 .circle {
@@ -230,6 +252,9 @@ footer a {
 	}
 	@media screen and (max-width: 900px) {
 		top: -60px;
+	}
+	@media screen and (max-width: 600px) {
+		top: -50px;
 	}
 }
 .black-background {

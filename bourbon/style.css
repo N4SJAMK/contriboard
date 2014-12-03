@@ -157,6 +157,16 @@ nav {
     nav ul li li a {
       font-family: "Source Sans Pro", sans-serif;
       text-align: right; }
+  @media screen and (max-width: 600px) {
+    nav {
+      text-align: center;
+      padding-top: 15px; }
+      nav ul {
+        float: none;
+        margin-top: 40px;
+        display: inline; }
+      nav li a {
+        font-size: 13px; } }
 
 .nav-bg {
   background-color: #5A3866;

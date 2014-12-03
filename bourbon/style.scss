@@ -76,6 +76,18 @@ nav {
 			text-align: right;
 		}
 	}
+	@media screen and (max-width: 600px) {
+		text-align: center;
+		padding-top: 15px;
+		ul {
+			float: none;
+			margin-top: 40px;
+			display: inline;
+		}
+		li a {
+			font-size: 13px;
+		}
+	}
 }
 .nav-bg {
 	background-color: $purple-dark;

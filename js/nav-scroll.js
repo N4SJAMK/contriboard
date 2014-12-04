@@ -20,11 +20,6 @@ jQuery(document).ready(function($) {
         e.preventDefault();
         
 		$('body').scrollTo(target, 800, {offset: -70, 'axis':'y', easing:'easeOutQuad'});
-        //Collapse mobile menu after clicking
-		/* if ($('.navbar-collapse').hasClass('in')){
-			$('.navbar-collapse').removeClass('in').addClass('collapse');
-		} */
-		
 	});
 
 });

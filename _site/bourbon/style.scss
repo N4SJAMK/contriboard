@@ -235,6 +235,17 @@ article {
 .black-background {
 	background-color: $black;
 }
+
+.n4sjamklogo, .digilelogo, .jamklogo, .tekeslogo {
+	height: 120px;
+	@media screen and (max-width: 1200px) {
+		height: 110px;
+	}
+	@media screen and (max-width: 600px) {
+		height: 80px;
+	}
+}
+
 .light-purple-background {
 	background-color: $purple-light;
 }

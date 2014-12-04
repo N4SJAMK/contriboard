@@ -352,6 +352,15 @@ article {
 .black-background {
   background-color: #190C21; }
 
+.n4sjamklogo, .digilelogo, .jamklogo, .tekeslogo {
+  height: 120px; }
+  @media screen and (max-width: 1200px) {
+    .n4sjamklogo, .digilelogo, .jamklogo, .tekeslogo {
+      height: 110px; } }
+  @media screen and (max-width: 600px) {
+    .n4sjamklogo, .digilelogo, .jamklogo, .tekeslogo {
+      height: 80px; } }
+
 .light-purple-background {
   background-color: #724A7F; }
 

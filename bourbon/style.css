@@ -278,23 +278,38 @@ header p {
   position: relative;
   top: -90px;
   color: #FFFFFF;
-  text-align: center;
+  text-align: left;
+  padding-left: 20px;
   z-index: 10; }
-  .some-buttons a {
-    font-weight: normal;
-    color: #FFFFFF;
-    padding-right: 5px; }
-    .some-buttons a:hover {
-      color: #d9d9d9; }
-  .some-buttons i {
-    padding: 0 10px; }
-  @media screen and (max-width: 900px) {
-    .some-buttons {
-      top: -60px; } }
-  @media screen and (max-width: 600px) {
-    .some-buttons {
-      top: -50px; } }
 
+.some-buttons a {
+  font-weight: normal;
+  color: #FFFFFF;
+  padding-right: 5px; }
+
+.some-buttons a:hover {
+  color: #d9d9d9; }
+
+.some-buttons i {
+  padding: 0 10px; }
+
+@media screen and (max-width: 1200px) {
+  .some-buttons {
+    text-align: center;
+    padding-left: 0px; } }
+@media screen and (max-width: 900px) {
+  .some-buttons {
+    top: -60px;
+    text-align: center;
+    padding-left: 0px; } }
+@media screen and (max-width: 600px) {
+  .some-buttons {
+    top: -50px;
+    text-align: center;
+    padding-left: 0px; }
+
+  .some-texts {
+    display: none; } }
 article {
   padding: 10px; }
   @media screen and (max-width: 900px) {
